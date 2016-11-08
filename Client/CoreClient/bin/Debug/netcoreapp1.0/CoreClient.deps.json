@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "d0f332d29bdce1963030276e3bdcc3c30f70534f"
+    "signature": "4b1a59988819cfcbcf2d02aff4239743a9faf925"
   },
   "compilationOptions": {
     "defines": [
@@ -34,7 +34,8 @@
           "Microsoft.Extensions.Logging.Console": "1.0.0",
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0"
+          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
+          "OpenSans": "1.0.1"
         },
         "runtime": {
           "CoreClient.dll": {}
@@ -1810,6 +1811,7 @@
           "lib/netstandard1.0/NuGet.Versioning.dll": {}
         }
       },
+      "OpenSans/1.0.1": {},
       "Remotion.Linq/2.1.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -4302,6 +4304,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-Stok+SI5lWxOkTgZZM7jT4xuAZogm5+j85mKJeHSXb8o0OAbB+qDX9jkdM2wIEnjoR8R29J0nQYwk2Kl2lWFpA=="
+    },
+    "OpenSans/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8nzedQfZhfCVWD9SSFPlkkh9OKsdTnFWSzvX/jfuvJztBepNwYBkevprtN1BjgyfBZMRcSoi5PJHvE1tgCzOIw=="
     },
     "Remotion.Linq/2.1.1": {
       "type": "package",
