@@ -538,7 +538,6 @@ a.mask {
 	color: #000;
   	font-size: 3em;
   	padding: 0 0 0.3em;
-  	font-family: 'Montserrat-Regular';
 }
 .service-top h3:after,.service-top h3:before{
 	width: 200px;
@@ -782,7 +781,7 @@ a.more:hover{
 	color: #000;
   	font-size: 3em;
   	padding: 0 0 0.3em;
-  	font-family: 'Montserrat-Regular';
+  	
 }
 .project h3:after,.project h3:before{
 	width: 200px;
@@ -890,7 +889,6 @@ a.more-in:hover{
 	color: #000;
   	font-size: 3em;
   	padding: 0 0 0.3em;
-  	font-family: 'Montserrat-Regular';
 }
 .content-bottom h3:after,.content-bottom h3:before{
 	width: 200px;
@@ -965,7 +963,6 @@ i.dolor{
 	color: #000;
   font-size: 3em;
   padding: 0 0 1em;
-font-family: 'Montserrat-Regular';
 }
 .content-bottom1 h3:after,.content-bottom1 h3:before{
 	width: 200px;
@@ -991,7 +988,6 @@ font-family: 'Montserrat-Regular';
 	font-size: 1.5em;
   	color: #fff;
 	margin: 0 0 0.7em;
-	font-family: 'Montserrat-Regular';
 }
 .footer-top-at {
   	padding: 5em 0;
