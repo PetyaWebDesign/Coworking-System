@@ -32,7 +32,8 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet" />
 
     </environment>
-
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- slide -->
     <script>
@@ -53,7 +54,7 @@
     @await Html.PartialAsync("_MiddleHeaderPartial")
     @await Html.PartialAsync("_SliderNamesPartial")
     @await Html.PartialAsync("_HeaderBottomPartial")
- 
+
     <!--content-->
     <div class="content">
         @RenderBody()

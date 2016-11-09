@@ -44,7 +44,12 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "OpenSans": "1.0.1"
+    "OpenSans": "1.0.1",
+    "Microsoft.AspNetCore.Authentication.Facebook": "1.0.0",
+    "Microsoft.AspNetCore.Authentication.Google": "1.0.0",
+    "Microsoft.AspNetCore.Authentication.Twitter": "1.0.0",
+    "Microsoft.AspNetCore.Authentication.MicrosoftAccount": "1.0.0",
+    "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.3"
   },
 
   "tools": {
