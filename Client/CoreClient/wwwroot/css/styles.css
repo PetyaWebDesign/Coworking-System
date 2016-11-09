@@ -192,7 +192,6 @@ nav ul { list-style: none; padding: 0;margin: 0; }
 .navigation nav ul li a {
    color: #1B1B1B;
 	font-size: 0.9em;
-	font-family: 'Oxygen-Regular';
 	margin: 0.3em 1em !important;
     text-align: center;
     display: block !important;
@@ -206,7 +205,7 @@ nav ul { list-style: none; padding: 0;margin: 0; }
     text-decoration: none;
 }
  nav ul li a:hover {   
-	color:#27da93 !important;
+	color:orange !important;
 	background: none !important;
 }
 .indicator { position: absolute; right: 0 !important; }
