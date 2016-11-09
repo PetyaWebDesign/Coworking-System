@@ -101,6 +101,9 @@ namespace CoreClient.Controllers
         public IActionResult Register(string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
+
+            if (AjaxExtensions.IsAjaxRequest(Request)) return PartialView();
+
             return View();
         }
 
