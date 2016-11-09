@@ -61,5 +61,9 @@
     <!--footer-->
     @await Html.PartialAsync("_FooterPartial")
     <!--//footer-->
+
+    @await Html.PartialAsync("_ModalLoginPartial", new LoginViewModel())
+
+    @RenderSection("Scripts", false)
 </body>
 </html>
