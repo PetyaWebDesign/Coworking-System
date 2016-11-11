@@ -416,7 +416,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   	padding: 0 0 0.3em;
 }
 .caption h3 span{
-	border-bottom: 7px solid #27DA93;
+	border-bottom: 7px solid orange;
 }
 .caption p{
 	color: #fff;
@@ -1095,7 +1095,7 @@ transform: rotatey(360deg);
   	margin-top: 1.8em;
 }
 .banner-buying h3 span{
-	border-bottom: 7px solid #27DA93;
+	border-bottom: 7px solid orange;
 }
 /*----*/
 .menu-right{
