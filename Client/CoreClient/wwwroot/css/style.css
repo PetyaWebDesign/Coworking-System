@@ -4980,3 +4980,30 @@ a.more {
   margin: 0.5em 0 0;
 }
 }
+
+
+/*User Profile*/
+.badge {
+  background-color: #777;
+}
+
+.user-profile{
+    background-color:#DCDCDC;
+}
+
+.user-profile img{
+    width:100%;
+    position:relative;
+    top:-60px;
+}
+
+.user-info h2{
+    color:#fff;
+    text-align:center;
+}
+
+.user-info p{
+    color:#fff;
+    font-size:1.4em;
+    text-align:center;
+}
