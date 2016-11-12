@@ -20,6 +20,9 @@ deploy:
   password:
     secure: 824HCV6mH43c4kkXO5QaOA==
   aspnet_core: true
+  app_offline: true
+  sync_retry_attempts: 2
+  sync_retry_interval: 1000
   aspnet_core_force_restart: true
   on:
     branch: master
