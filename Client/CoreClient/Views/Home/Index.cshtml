@@ -1,13 +1,14 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@await Html.PartialAsync("_SliderNamesPartial")
+@await Html.PartialAsync("_HeaderBottomPartial")
 
     <div class="content-grid">
         <div class="container">
             <h3>Топ Coworking места</h3>
             <div class="col-md-4 box_2">
-                <a href="single.html" class="mask">
+                <a asp-controller="Home" asp-action="SinglePlace" class="mask">
                     <img class="img-responsive zoom-img" src="images/betahaus.jpg" alt="">
                     <span class="four">40,000$</span>
                 </a>
@@ -17,7 +18,7 @@
                 </div>
             </div>
             <div class="col-md-4 box_2">
-                <a href="single.html" class="mask">
+                <a asp-controller="Home" asp-action="SinglePlace" class="mask">
                     <img class="img-responsive zoom-img" src="images/pc5.jpg" alt="">
                     <span class="four">40,000$</span>
                 </a>

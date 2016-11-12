@@ -20,6 +20,14 @@ namespace CoreClient.Controllers
             return View();
         }
 
+
+        public IActionResult SinglePlace()
+        {
+            
+
+            return View();
+        }
+
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
