@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CoreClient.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public IActionResult Index()
         {
@@ -16,6 +16,14 @@ namespace CoreClient.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
+
+
+        public IActionResult SinglePlace()
+        {
+            
 
             return View();
         }

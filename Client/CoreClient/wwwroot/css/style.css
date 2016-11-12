@@ -1,20 +1,12 @@
-/*Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 @font-face {
-    font-family: 'Montserrat-Regular';
-    src:url(../fonts/Montserrat-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Oxygen-Regular';
-    src:url(../fonts/Oxygen-Regular.ttf) format('truetype');
+    font-family: 'didactgothic';
+    src: url('../fonts/didactgothic.ttf') format('truetype');
 }
 html,body{
 	background:#fff;
 	font-size: 100%;
-	font-family: 'Oxygen-Regular';
+	font-family: 'didactgothic';
 }
 body a{
 	transition: 0.5s all;
@@ -40,8 +32,8 @@ h1,h2,h3,h4,h5,h6,label,p{
 }
 /*--header--*/
 .header{
-  	background-color: #27da93; 
-  	  padding: 0.8em 0;
+  	 background-color: #ffffff;
+  	  padding: 1.6em 0;
 }
 .bottom-head {
 	text-align: center;
@@ -205,7 +197,9 @@ i.deal{
 .right-icons li span,.right-icons li a{
 	display: block;
 	font-size: 1em;
-	color:#fff;
+    text-transform:uppercase;
+    font-weight:bold;
+	color:#000;
 	text-decoration: none;
 	margin: 0 0.3em;
 }
@@ -222,12 +216,12 @@ ul.right-icons {
   padding: 0 0 0 0.5em;
 }
 a.play-icon.popup-with-zoom-anim {
-  	color: #fff;
+  	color: #000;
   	font-size: 1em;
 }
 i.glyphicon.glyphicon-menu-hamburger {
   font-size: 1.5em;
-  color: #fff;
+  color: orange;
 }
 .feed {
   padding: 4em 0 0;
@@ -415,14 +409,14 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 .caption h3{
 	color: #fff;
-	font-size: 3em;
+	font-size: 4.5em;
   	text-transform: uppercase;
   	display: inline-block;
-  	font-family: 'Montserrat-Regular';
+  	font-family: 'DidactGothic';
   	padding: 0 0 0.3em;
 }
 .caption h3 span{
-	border-bottom: 7px solid #27DA93;
+	border-bottom: 7px solid orange;
 }
 .caption p{
 	color: #fff;
@@ -432,7 +426,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 .banner1{
 	background: url(../images/4.jpg) no-repeat;
 	width:100%;
-	min-height: 550px;
+	min-height: 750px;
 	background-size: cover;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -441,7 +435,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 .banner2{
 	background: url(../images/2.jpg) no-repeat;
 	width:100%;
-	min-height: 550px;
+	min-height: 750px;
 	background-size: cover;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -450,7 +444,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 .banner3{
 	background: url(../images/5.jpg) no-repeat;
 	width:100%;
-	min-height: 550px;
+	min-height: 750px;
 	background-size: cover;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -463,7 +457,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 	color: #fff;
   	font-size: 3em;
  	padding: 0 0 1.3em;
-  	font-family: 'Montserrat-Regular';
+  	font-family: DidactGothic;
 }
 .content-grid h3:after,.content-grid h3:before{
 	width: 200px;
@@ -475,7 +469,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 	margin: 0 1%;
 }
 .content-grid{
-	background: url(../images/back1.jpg);
+	background-color:orange;
 	width:100%;
 	min-height: 500px;
 	background-size: cover;
@@ -544,7 +538,6 @@ a.mask {
 	color: #000;
   	font-size: 3em;
   	padding: 0 0 0.3em;
-  	font-family: 'Montserrat-Regular';
 }
 .service-top h3:after,.service-top h3:before{
 	width: 200px;
@@ -788,7 +781,7 @@ a.more:hover{
 	color: #000;
   	font-size: 3em;
   	padding: 0 0 0.3em;
-  	font-family: 'Montserrat-Regular';
+  	
 }
 .project h3:after,.project h3:before{
 	width: 200px;
@@ -806,7 +799,7 @@ a.more:hover{
 /*--//project--*/
 /*--middle--*/
 .content-middle {
-  background: url(../images/ab.jpg) no-repeat center;
+  background: url(../images/betahaus.jpg) no-repeat center;
   width: 100%;
   min-height: 250px;
   display: block;
@@ -896,7 +889,6 @@ a.more-in:hover{
 	color: #000;
   	font-size: 3em;
   	padding: 0 0 0.3em;
-  	font-family: 'Montserrat-Regular';
 }
 .content-bottom h3:after,.content-bottom h3:before{
 	width: 200px;
@@ -971,7 +963,6 @@ i.dolor{
 	color: #000;
   font-size: 3em;
   padding: 0 0 1em;
-font-family: 'Montserrat-Regular';
 }
 .content-bottom1 h3:after,.content-bottom1 h3:before{
 	width: 200px;
@@ -997,7 +988,6 @@ font-family: 'Montserrat-Regular';
 	font-size: 1.5em;
   	color: #fff;
 	margin: 0 0 0.7em;
-	font-family: 'Montserrat-Regular';
 }
 .footer-top-at {
   	padding: 5em 0;
@@ -1086,7 +1076,7 @@ transform: rotatey(360deg);
 }
 /*--buy--*/
 .banner-buying {
-  background: url(../images/4.jpg) no-repeat;
+  background: url(../images/banner.jpg) no-repeat;
   width: 100%;
   min-height: 250px;
   background-size: cover;
@@ -1105,7 +1095,7 @@ transform: rotatey(360deg);
   	margin-top: 1.8em;
 }
 .banner-buying h3 span{
-	border-bottom: 7px solid #27DA93;
+	border-bottom: 7px solid orange;
 }
 /*----*/
 .menu-right{
@@ -4198,10 +4188,10 @@ ul.right-icons {
   margin-top: 1px;
 }
 .caption h3 {
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 .caption h3 span {
-  border-bottom: 4px solid #27DA93;
+  border-bottom: 4px solid orange;
 }
 .caption p {
   font-size: 1.1em;
@@ -4966,6 +4956,7 @@ h1.typo1 {
 /*----*/
 .bottom-head h6 {
   display: none;
+
 }
 .media {
   height: 70px;

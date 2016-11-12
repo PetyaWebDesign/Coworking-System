@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0/",
-    "signature": "56fe56143355176e682d9b7cb12ee8200a892fd6"
+    "signature": "a8b4a0304e40556580866288cb126d26cb3fd384"
   },
   "compilationOptions": {
     "defines": [
@@ -34,12 +34,19 @@
           "Microsoft.Extensions.Logging.Console": "1.0.0",
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0"
+          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
+          "OpenSans": "1.0.1",
+          "Microsoft.AspNetCore.Authentication.Facebook": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.Google": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.Twitter": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.MicrosoftAccount": "1.0.0",
+          "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.3"
         },
         "compile": {
           "CoreClient.dll": {}
         }
       },
+      "jQuery/1.8.0": {},
       "Libuv/1.9.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1"
@@ -78,6 +85,49 @@
         },
         "compile": {
           "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.Cookies.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Facebook/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.OAuth": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.Facebook.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Google/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.OAuth": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.Google.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.MicrosoftAccount/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.OAuth": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.OAuth/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication": "1.0.0",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Runtime.Serialization.Primitives": "4.1.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.OAuth.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Twitter/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication": "1.0.0",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.Twitter.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authorization/1.0.0": {
@@ -1107,6 +1157,11 @@
           "lib/netstandard1.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
+      "Microsoft.jQuery.Unobtrusive.Ajax/3.2.3": {
+        "dependencies": {
+          "jQuery": "1.8.0"
+        }
+      },
       "Microsoft.Net.Http.Headers/1.0.0": {
         "dependencies": {
           "System.Buffers": "4.0.0",
@@ -1329,6 +1384,7 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         }
       },
+      "OpenSans/1.0.1": {},
       "Remotion.Linq/2.1.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -2828,12 +2884,19 @@
           "Microsoft.Extensions.Logging.Console": "1.0.0",
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0"
+          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
+          "OpenSans": "1.0.1",
+          "Microsoft.AspNetCore.Authentication.Facebook": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.Google": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.Twitter": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.MicrosoftAccount": "1.0.0",
+          "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.3"
         },
         "runtime": {
           "CoreClient.dll": {}
         }
       },
+      "jQuery/1.8.0": {},
       "Libuv/1.9.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1"
@@ -2872,6 +2935,49 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.Cookies.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Facebook/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.OAuth": "1.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.Facebook.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Google/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.OAuth": "1.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.Google.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.MicrosoftAccount/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.OAuth": "1.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.OAuth/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication": "1.0.0",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Runtime.Serialization.Primitives": "4.1.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.OAuth.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Twitter/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication": "1.0.0",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.Twitter.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authorization/1.0.0": {
@@ -3904,6 +4010,11 @@
           "lib/netstandard1.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
+      "Microsoft.jQuery.Unobtrusive.Ajax/3.2.3": {
+        "dependencies": {
+          "jQuery": "1.8.0"
+        }
+      },
       "Microsoft.Net.Http.Headers/1.0.0": {
         "dependencies": {
           "System.Buffers": "4.0.0",
@@ -4120,6 +4231,7 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         }
       },
+      "OpenSans/1.0.1": {},
       "Remotion.Linq/2.1.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -5515,6 +5627,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "jQuery/1.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-laDFQRJrIRHT0Z0GVYklMt3bE0iu0MZFJwHwg21kt3SHb7Bj8TdNiM3K+ZdK1DzB8ZxKy8z7NkJvwMas+dmHBw=="
+    },
     "Libuv/1.9.0": {
       "type": "package",
       "serviceable": true,
@@ -5534,6 +5651,31 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-zWhEmMwAqLnQIn3eWGlfioBkKngLB/cEqhqw+jAPPrelH8nNNCnHKIoC6ZQf5oSPmpTX9vZU7XEOrpXHFxSQGw=="
+    },
+    "Microsoft.AspNetCore.Authentication.Facebook/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fhk2tzh5rL/dOtTx5iFmm0lTUsy3Plv8wojf+AWJSNfgp1M3XxKj7RmPu8O3fBuSECTB7mu68UDjsFPCV3v/QQ=="
+    },
+    "Microsoft.AspNetCore.Authentication.Google/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y11elEMu4lP5qFnQ0UGbpe8d0uOlaT1KLkgDiRKpPvy1MqmtgPtVjqzvX9GG6+dJ187xY8N7Y1gWlTyAZh7rhg=="
+    },
+    "Microsoft.AspNetCore.Authentication.MicrosoftAccount/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VgDrM9usCK3Z7BAsmPKVjifjTiXgTZtstKXxwwCQ6N/FYqFu2tUtOAQZn8UyqAA7UW+iKsR26gKAVEJhfvjGWg=="
+    },
+    "Microsoft.AspNetCore.Authentication.OAuth/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QZfUgJPv/jnFCZ+CJOSeAXzhYQVBe864krJcijDfTE0dspuF1+uifRJDaCuHGKSJlnsyOGVGjrBcMZLK3wnCkg=="
+    },
+    "Microsoft.AspNetCore.Authentication.Twitter/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uwt+QdqWsTPvEec6pLB8hFxLmFz53UfAfVk2ITAHnaS0NM0DtIuEzE5dCtS+a/nSjLqfdVrisfryjG63C2aSTw=="
     },
     "Microsoft.AspNetCore.Authorization/1.0.0": {
       "type": "package",
@@ -5935,6 +6077,11 @@
       "serviceable": true,
       "sha512": "sha512-NSSIBREmHHiyoAFXV2LMA+a6RMZtTHxgUbHJGHRtnjmTKnRyticx5HAzNpy8VG9+HCCHenL9QD7zSA8jjgAi5A=="
     },
+    "Microsoft.jQuery.Unobtrusive.Ajax/3.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bp8G1m66xaNE9RLm58qk7eXNDlH/yUBc/Dt8dMof/t0hBN3JpUQpPF7pavEVAauPCmcvM90pTrATG8nXbCi9yw=="
+    },
     "Microsoft.Net.Http.Headers/1.0.0": {
       "type": "package",
       "serviceable": true,
@@ -6014,6 +6161,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw=="
+    },
+    "OpenSans/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8nzedQfZhfCVWD9SSFPlkkh9OKsdTnFWSzvX/jfuvJztBepNwYBkevprtN1BjgyfBZMRcSoi5PJHvE1tgCzOIw=="
     },
     "Remotion.Linq/2.1.1": {
       "type": "package",

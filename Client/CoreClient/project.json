@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet-CoreClient-41f30143-7fe6-4ba7-a1ba-e8d128078f32",
 
   "dependencies": {
@@ -43,7 +43,13 @@
     "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
       "version": "1.0.0-preview2-final",
       "type": "build"
-    }
+    },
+    "OpenSans": "1.0.1",
+    "Microsoft.AspNetCore.Authentication.Facebook": "1.0.0",
+    "Microsoft.AspNetCore.Authentication.Google": "1.0.0",
+    "Microsoft.AspNetCore.Authentication.Twitter": "1.0.0",
+    "Microsoft.AspNetCore.Authentication.MicrosoftAccount": "1.0.0",
+    "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.3"
   },
 
   "tools": {

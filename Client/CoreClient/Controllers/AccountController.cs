@@ -11,11 +11,12 @@ using Microsoft.Extensions.Logging;
 using CoreClient.Models;
 using CoreClient.Models.AccountViewModels;
 using CoreClient.Services;
+using CoreClient.Extensions;
 
 namespace CoreClient.Controllers
 {
     [Authorize]
-    public class AccountController : Controller
+    public class AccountController : BaseController
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
@@ -55,6 +56,8 @@ namespace CoreClient.Controllers
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
+            var isAjax = AjaxExtensions.IsAjaxRequest(Request);
+
             if (ModelState.IsValid)
             {
                 // This doesn't count login failures towards account lockout
@@ -72,11 +75,17 @@ namespace CoreClient.Controllers
                 if (result.IsLockedOut)
                 {
                     _logger.LogWarning(2, "User account locked out.");
+
+                    if (isAjax) return PartialView("Lockout");
+
                     return View("Lockout");
                 }
                 else
                 {
                     ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+
+                    if (isAjax) return PartialView(model);
+
                     return View(model);
                 }
             }
@@ -92,6 +101,9 @@ namespace CoreClient.Controllers
         public IActionResult Register(string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
+
+            if (AjaxExtensions.IsAjaxRequest(Request)) return PartialView();
+
             return View();
         }
 

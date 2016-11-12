@@ -77,6 +77,24 @@ namespace CoreClient
 
             // Add external authentication middleware below. To configure them please see http://go.microsoft.com/fwlink/?LinkID=532715
 
+            app.UseFacebookAuthentication(new FacebookOptions()
+            {
+                AppId = "1212",
+                AppSecret = "121212B"
+            });
+
+            app.UseGoogleAuthentication(new GoogleOptions()
+            {
+                ClientId = "1212121212112",
+                ClientSecret = "1211212"
+            });
+
+            app.UseTwitterAuthentication(new TwitterOptions()
+            {
+                ConsumerSecret = "1212121212",
+                ConsumerKey ="121211212"
+            });
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

@@ -5,34 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@ViewData["Title"] - CoreClient</title>
 
+    @*----TODO: Improve speed and stability with different environments *@
 
-    <environment names="Development">
+    @*<environment names="Development">
+            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+            <link href="~/css/styles.css" rel="stylesheet" />
+            <link href="~/css/style.css" rel="stylesheet" />
+            <link href="~/css/flexslider.css" rel="stylesheet" />
+            <link href="~/css/popuo-box.css" rel="stylesheet" />
+            <link href="~/css/memenu.css" rel="stylesheet" />
+            <link href="~/css/default.css" rel="stylesheet" />
+            <script src="~/js/jquery.min.js"></script>
+            <script src="~/js/bootstrap.js"></script>
+            <script src="~/js/scripts.js"></script>
+            <script src="~/js/responsiveslides.min.js"></script>
+            <script src="~/js/jquery.flexslider.js"></script>
+            <script src="~/js/jquery.magnific-popup.js"></script>
+            <script src="~/js/memenu.js"></script>
+            <script src="~/js/move-top.js"></script>
+            <script src="~/js/easing.js"></script>
+            <script src="~/js/easyResponsiveTabs.js"></script>
+            <script src="~/js/jquery.easydropdown.js"></script>
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet" />
+
+        </environment>*@
+    @*<environment names="Staging,Production">
+
+
+            <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
+                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+            <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+            <script src="~/js/jquery.min.js"></script>
+            <script src="~/js/bootstrap.js"></script>
+            <script src="~/js/scripts.js"></script>
+            <script src="~/js/responsiveslides.min.js"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet" />
+
+        </environment>*@
+
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link href="~/css/styles.css" rel="stylesheet" />
-        <link href="~/css/style.css" rel="stylesheet" />
-        <script src="~/js/jquery.min.js"></script>
-        <script src="~/js/bootstrap.js"></script>
-        <script src="~/js/scripts.js"></script>
-        <script src="~/js/responsiveslides.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet" />
+         <link href="~/css/styles.css" rel="stylesheet" />
+         <link href="~/css/style.css" rel="stylesheet" />
+         <link href="~/css/flexslider.css" rel="stylesheet" />
+         <link href="~/css/popuo-box.css" rel="stylesheet" />
+         <link href="~/css/memenu.css" rel="stylesheet" />
+         <link href="~/css/default.css" rel="stylesheet" />
+         <script src="~/js/jquery.min.js"></script>
+         <script src="~/js/bootstrap.js"></script>
+         <script src="~/js/scripts.js"></script>
+         <script src="~/js/responsiveslides.min.js"></script>
+         <script src="~/js/jquery.flexslider.js"></script>
+         <script src="~/js/jquery.magnific-popup.js"></script>
+         <script src="~/js/memenu.js"></script>
+         <script src="~/js/move-top.js"></script>
+         <script src="~/js/easing.js"></script>
+         <script src="~/js/easyResponsiveTabs.js"></script>
+         <script src="~/js/jquery.easydropdown.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet" />
 
-    </environment>
-    <environment names="Staging,Production">
-
-
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-        <script src="~/js/jquery.min.js"></script>
-        <script src="~/js/bootstrap.js"></script>
-        <script src="~/js/scripts.js"></script>
-        <script src="~/js/responsiveslides.min.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet" />
-
-    </environment>
-
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- slide -->
     <script>
@@ -51,9 +85,9 @@
     <!--header-->
     @await Html.PartialAsync("_HeaderTopPartial")
     @await Html.PartialAsync("_MiddleHeaderPartial")
-    @await Html.PartialAsync("_MainHeaderPartial")
-    @await Html.PartialAsync("_HeaderBottomPartial")
- 
+
+
+
     <!--content-->
     <div class="content">
         @RenderBody()
@@ -61,5 +95,9 @@
     <!--footer-->
     @await Html.PartialAsync("_FooterPartial")
     <!--//footer-->
+
+    @await Html.PartialAsync("_ModalLoginPartial", new LoginViewModel())
+
+    @RenderSection("Scripts", false)
 </body>
 </html>
