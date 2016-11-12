@@ -9,7 +9,8 @@ before_build:
 #package Web Application project for Web Deploy
 build:
   verbosity: minimal
-  
+    publish_wap: true
+
 deploy:
 - provider: WebDeploy
   server: https://s2kdesign-001-site12.ctempurl.com:8172/msdeploy.axd
