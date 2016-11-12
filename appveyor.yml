@@ -1,3 +1,4 @@
+version: 1.0.{build}
 configuration: release
 
 #restore NuGet packages before running MSBuild
@@ -8,4 +9,15 @@ before_build:
 #package Web Application project for Web Deploy
 build:
   verbosity: minimal
-  publish_wap: true
+  
+deploy:
+- provider: WebDeploy
+  server: https://s2kdesign-001-site12.ctempurl.com:8172/msdeploy.axd
+  website: s2kdesign-001-site12
+  username: ifc\s2kdesign-001
+  password:
+    secure: 824HCV6mH43c4kkXO5QaOA==
+  aspnet_core: true
+  aspnet_core_force_restart: true
+  on:
+    branch: master
