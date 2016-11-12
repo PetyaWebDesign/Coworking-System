@@ -20,3 +20,7 @@ deploy:
   aspnet_core_force_restart: true
   on:
     branch: master
+artifacts:
+  # pushing the website package
+  - path: build\_PublishedWebsites\Website_Package\Website.zip
+    name: WebsitePackage
