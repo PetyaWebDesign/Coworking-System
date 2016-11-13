@@ -1,14 +1,16 @@
-﻿using System;
+﻿using Repository.Pattern.Infrastructure;
+using Repository.Pattern.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Repository.Pattern.Infrastructure;
-using Repository.Pattern.Repositories;
 
 namespace Service.Pattern
 {
+
     public abstract class Service<TEntity> : IService<TEntity> where TEntity : class, IObjectState
     {
         #region Private Fields
