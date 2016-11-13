@@ -241,6 +241,7 @@ D:\.NET projects\CoworkingSystem\Client\CoreClient\Data\Migrations\0000000000000
 D:\.NET projects\CoworkingSystem\Client\CoreClient\Data\Migrations\ApplicationDbContextModelSnapshot.cs
 D:\.NET projects\CoworkingSystem\Client\CoreClient\Extensions\AjaxExtensions.cs
 D:\.NET projects\CoworkingSystem\Client\CoreClient\Models\ApplicationUser.cs
+D:\.NET projects\CoworkingSystem\Client\CoreClient\Models\SinglePageBannerPartialViewModels.cs
 D:\.NET projects\CoworkingSystem\Client\CoreClient\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs
 D:\.NET projects\CoworkingSystem\Client\CoreClient\Models\AccountViewModels\ForgotPasswordViewModel.cs
 D:\.NET projects\CoworkingSystem\Client\CoreClient\Models\AccountViewModels\LoginViewModel.cs

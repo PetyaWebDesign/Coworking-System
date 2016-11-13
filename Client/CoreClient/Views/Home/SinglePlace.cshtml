@@ -2,7 +2,9 @@
     ViewData["Title"] = "Single Place";
 }
 
-@await Html.PartialAsync("_SinglePageBannerPartial")
+@await Html.PartialAsync("_SinglePageBannerPartial",
+    new SinglePageBannerPartialViewModels() { PageName = "Betahaus, Sofia", PictureUrl = "../images/betahaus-banner.jpg" }))
+
 
 <div class="container">
 

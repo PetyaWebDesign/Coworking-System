@@ -2,7 +2,8 @@
     ViewData["Title"] = "User Profile";
 }
 
-@await Html.PartialAsync("_SinglePageBannerPartial")
+@await Html.PartialAsync("_SinglePageBannerPartial",
+    new SinglePageBannerPartialViewModels() { PageName = "Добре дошъл в Apt.19", PictureUrl = "../images/banner.jpg" })
 
 <div class="container">
     <div class="row">
