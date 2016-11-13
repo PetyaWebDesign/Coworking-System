@@ -9,19 +9,17 @@
 {
     <li>
 
-        <a asp-area="" asp-controller="Manage" asp-action="Index" title="Manage"><i class="fa fa-user"> </i>Здравей @UserManager.GetUserName(User)!</a>
+        <a asp-area="" asp-controller="Manage" asp-action="Index" title="Manage"><i class="fa fa-user"> </i>@UserManager.GetUserName(User)</a>
     </li>
     <li>
         <form asp-area="" asp-controller="Account" asp-action="LogOff" method="post" id="logoutForm">
-            <button type="submit" class="btn btn-warning">Log off</button>
+            <a type="submit"><i class="fa fa-power-off"></i></a>
         </form>
     </li>
 }
 else
 {
-    <li>
-        <a asp-area="" asp-controller="Account" asp-action="Register"><i class="fa fa-user"> </i>Регистрирай се</a>
-    </li>
+    
     <li>
         <a href="#" data-toggle="modal" data-target="#modalLogin"><i class="fa fa-user"> </i>Вход</a>
     </li>
