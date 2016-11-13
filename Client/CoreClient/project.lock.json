@@ -3,6 +3,61 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.0": {
+      "Autofac/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.ComponentModel": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "4.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "DynamicRepository/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "LinqKit": "1.1.7.3",
+          "Microsoft.NETCore.App": "1.0.0",
+          "System.Linq.Dynamic.Core": "1.0.3.4"
+        },
+        "compile": {
+          "lib/netcoreapp1.0/DynamicRepository.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/DynamicRepository.dll": {}
+        }
+      },
+      "DynamicRepository.EFCore/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "DynamicRepository": "1.1.2",
+          "Microsoft.EntityFrameworkCore": "1.0.1",
+          "System.Linq.Dynamic.Core": "1.0.3.4"
+        },
+        "compile": {
+          "lib/netcoreapp1.0/DynamicRepository.EFCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/DynamicRepository.EFCore.dll": {}
+        }
+      },
       "FontAwesome/4.7.0": {
         "type": "package"
       },
@@ -47,6 +102,24 @@
             "assetType": "native",
             "rid": "win7-x86"
           }
+        }
+      },
+      "LinqKit/1.1.7.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Expressions": "4.1.0",
+          "System.Linq.Queryable": "4.0.1",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Threading.Tasks": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.3/LinqKit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/LinqKit.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/1.0.1": {
@@ -1147,37 +1220,6 @@
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Design/1.0.0-preview2-final": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design.Core": "1.0.0-preview2-final",
-          "Microsoft.Extensions.CommandLineUtils": "1.0.0",
-          "Microsoft.NETCore.App": "1.0.0"
-        },
-        "compile": {
-          "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Design.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Design.dll": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Design.Core/1.0.0-preview2-final": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Hosting.Abstractions": "1.0.0",
-          "Microsoft.EntityFrameworkCore.Relational.Design": "1.0.0",
-          "System.AppContext": "4.1.0",
-          "System.Collections.NonGeneric": "4.0.1",
-          "System.IO": "4.1.0",
-          "System.IO.FileSystem": "4.0.1"
-        },
-        "compile": {
-          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.Core.dll": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -1233,21 +1275,13 @@
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview2-final": {
+      "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview3-final": {
         "type": "package",
-        "dependencies": {
-          "Microsoft.DotNet.Cli.Utils": "1.0.0-preview2-003121",
-          "Microsoft.DotNet.ProjectModel": "1.0.0-rc3-003121",
-          "Microsoft.EntityFrameworkCore.Design": "1.0.0-preview2-final",
-          "Microsoft.Extensions.CommandLineUtils": "1.0.0",
-          "Microsoft.NETCore.App": "1.0.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
-        },
         "compile": {
-          "lib/netcoreapp1.0/dotnet-ef.dll": {}
+          "lib/netstandard1.3/_._": {}
         },
         "runtime": {
-          "lib/netcoreapp1.0/dotnet-ef.dll": {}
+          "lib/netstandard1.3/_._": {}
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/1.0.0": {
@@ -3198,6 +3232,27 @@
           "lib/netstandard1.6/System.Linq.dll": {}
         }
       },
+      "System.Linq.Dynamic.Core/1.0.3.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Concurrent": "4.0.12-rc2-24027",
+          "System.Diagnostics.Debug": "4.0.11-rc2-24027",
+          "System.Dynamic.Runtime": "4.0.11-rc2-24027",
+          "System.Globalization": "4.0.11-rc2-24027",
+          "System.Linq.Expressions": "4.0.11-rc2-24027",
+          "System.Linq.Queryable": "4.0.1-rc2-24027",
+          "System.Reflection.Emit": "4.0.1-rc2-24027",
+          "System.Reflection.TypeExtensions": "4.1.0-rc2-24027",
+          "System.Runtime.Extensions": "4.1.0-rc2-24027",
+          "System.Threading": "4.0.11-rc2-24027"
+        },
+        "compile": {
+          "lib/netstandard1.3/System.Linq.Dynamic.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Linq.Dynamic.Core.dll": {}
+        }
+      },
       "System.Linq.Expressions/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -3562,7 +3617,7 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.1/_._": {}
+          "ref/netstandard1.1/System.Reflection.Emit.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.Emit.dll": {}
@@ -3576,7 +3631,7 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {}
+          "ref/netstandard1.0/System.Reflection.Emit.ILGeneration.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.Emit.ILGeneration.dll": {}
@@ -4436,10 +4491,93 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Data.Access/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "Data.TransferObject": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "1.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.0.1",
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netstandard1.6/Data.Access.dll": {}
+        },
+        "runtime": {
+          "netstandard1.6/Data.Access.dll": {}
+        }
+      },
+      "Data.TransferObject/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0",
+          "NETStandard.Library": "1.6.0"
+        }
+      },
+      "Service.Messages/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netstandard1.6/Service.Messages.dll": {}
+        },
+        "runtime": {
+          "netstandard1.6/Service.Messages.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Autofac/4.2.0": {
+      "sha512": "WHiPMqI8FYa4Mf4yTb0P/aBibHn7Z0B9r02CEXy9oAAkQMJpHxLOE45iIMMW+xthXu26V9nRIz7o5lA7V3ztgw==",
+      "type": "package",
+      "path": "Autofac/4.2.0",
+      "files": [
+        "Autofac.4.2.0.nupkg.sha512",
+        "Autofac.nuspec",
+        "lib/net45/Autofac.dll",
+        "lib/net45/Autofac.xml",
+        "lib/netstandard1.1/Autofac.dll",
+        "lib/netstandard1.1/Autofac.xml"
+      ]
+    },
+    "Autofac.Extensions.DependencyInjection/4.0.0": {
+      "sha512": "UQP+CkHs6wfjWhisuhSFoG8CNrG8fmYOclFwx/aYNc+He1Qoi8s9UDTSzcPncJ2JOtmZmFRWSLT0jhtT6KmYJg==",
+      "type": "package",
+      "path": "Autofac.Extensions.DependencyInjection/4.0.0",
+      "files": [
+        "Autofac.Extensions.DependencyInjection.4.0.0.nupkg.sha512",
+        "Autofac.Extensions.DependencyInjection.nuspec",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.xml"
+      ]
+    },
+    "DynamicRepository/1.1.2": {
+      "sha512": "uFJwL9jhBEzdh5qG+FI1cJRckSnVzOQZlCW7+E2PwJJvbtl13eJ1Vjk64687BQ0ydAJbm9Vk8SR5UIlHs/KYug==",
+      "type": "package",
+      "path": "DynamicRepository/1.1.2",
+      "files": [
+        "DynamicRepository.1.1.2.nupkg.sha512",
+        "DynamicRepository.nuspec",
+        "lib/net452/DynamicRepository.dll",
+        "lib/netcoreapp1.0/DynamicRepository.dll"
+      ]
+    },
+    "DynamicRepository.EFCore/1.1.2": {
+      "sha512": "I3IPiGY6KEBKChgkQ0ncBSqsorm2Tatn5rB7XR2eKmnEwM4AfohrjOGez3RzU/A22youXcjPObBsSJIdmL4J2A==",
+      "type": "package",
+      "path": "DynamicRepository.EFCore/1.1.2",
+      "files": [
+        "DynamicRepository.EFCore.1.1.2.nupkg.sha512",
+        "DynamicRepository.EFCore.nuspec",
+        "lib/netcoreapp1.0/DynamicRepository.EFCore.dll"
+      ]
+    },
     "FontAwesome/4.7.0": {
       "sha512": "n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
       "type": "package",
@@ -4490,6 +4628,39 @@
         "runtimes/win7-arm/native/libuv.dll",
         "runtimes/win7-x64/native/libuv.dll",
         "runtimes/win7-x86/native/libuv.dll"
+      ]
+    },
+    "LinqKit/1.1.7.3": {
+      "sha512": "CuBnUDQccS0ZeArvr+RIqQVF1NhyvEwYZSUOU9oJty+tZNdRhBvhJiqT9PgPXYfJ0wobFmFUdfEoCIX6WRSfqA==",
+      "type": "package",
+      "path": "LinqKit/1.1.7.3",
+      "files": [
+        "LinqKit.1.1.7.3.nupkg.sha512",
+        "LinqKit.nuspec",
+        "lib/net35/LinqKit.dll",
+        "lib/net35/LinqKit.xml",
+        "lib/net40/LinqKit.dll",
+        "lib/net40/LinqKit.xml",
+        "lib/net45/LinqKit.dll",
+        "lib/net45/LinqKit.xml",
+        "lib/net451/LinqKit.dll",
+        "lib/net451/LinqKit.xml",
+        "lib/net452/LinqKit.dll",
+        "lib/net452/LinqKit.xml",
+        "lib/net46/LinqKit.dll",
+        "lib/net46/LinqKit.xml",
+        "lib/net461/LinqKit.dll",
+        "lib/net461/LinqKit.xml",
+        "lib/netcore50/LinqKit.dll",
+        "lib/netcore50/LinqKit.xml",
+        "lib/netstandard1.3/LinqKit.dll",
+        "lib/netstandard1.3/LinqKit.xml",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/LinqKit.dll",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/LinqKit.xml",
+        "lib/sl50/LinqKit.dll",
+        "lib/sl50/LinqKit.xml",
+        "lib/uap10.0/LinqKit.dll",
+        "lib/uap10.0/LinqKit.xml"
       ]
     },
     "Microsoft.AspNetCore.Antiforgery/1.0.1": {
@@ -5383,35 +5554,6 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.xml"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/1.0.0-preview2-final": {
-      "sha512": "RhyjntECuOVsrKjgFog9rv+V7oBsxBNxz5NviF7uHvDDQXLyHH3os/CewQxRNsve114AQH5RX/Bww6qAXlSORQ==",
-      "type": "package",
-      "path": "Microsoft.EntityFrameworkCore.Design/1.0.0-preview2-final",
-      "files": [
-        "Microsoft.EntityFrameworkCore.Design.1.0.0-preview2-final.nupkg.sha512",
-        "Microsoft.EntityFrameworkCore.Design.nuspec",
-        "lib/net451/_._",
-        "lib/netcore50/_._",
-        "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Design.dll",
-        "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Design.runtimeconfig.json",
-        "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "runtimes/win7-x64/lib/net451/Microsoft.EntityFrameworkCore.Design.exe",
-        "runtimes/win7-x86/lib/net451/Microsoft.EntityFrameworkCore.Design.exe"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Design.Core/1.0.0-preview2-final": {
-      "sha512": "H3pHksGErQSEwWyvISlDYMslIXftS4XB2m0AvqBS08ECGHagh27mqm/oIyUetzzRad+C2V0zpguJmR14eMiRaA==",
-      "type": "package",
-      "path": "Microsoft.EntityFrameworkCore.Design.Core/1.0.0-preview2-final",
-      "files": [
-        "Microsoft.EntityFrameworkCore.Design.Core.1.0.0-preview2-final.nupkg.sha512",
-        "Microsoft.EntityFrameworkCore.Design.Core.nuspec",
-        "lib/net451/Microsoft.EntityFrameworkCore.Design.Core.dll",
-        "lib/net451/Microsoft.EntityFrameworkCore.Design.Core.xml",
-        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.Core.dll",
-        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.Core.xml"
-      ]
-    },
     "Microsoft.EntityFrameworkCore.Relational/1.0.1": {
       "sha512": "2LZ746BTMSoAHsqsxFAVYVzo/ziS682z2evAxDnwwg1Fw27MuxqEjl38YWz5OE1TchmtEPxWWVcup+sL6rjPXg==",
       "type": "package",
@@ -5464,27 +5606,27 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.xml"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview2-final": {
-      "sha512": "x+OkqEMERFJY9cAFBZsNPEmZEApAakay2yhE3CD+nyc+HtJDFbyX+spcnOxUjZ2w+YqAdzT6L3DzjlCbRLv9vQ==",
+    "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview3-final": {
+      "sha512": "SDk1lvgcSWDxehlmrdZZiUnp6/II0oEaasQGOwivmuF+w4Zxnah9Qq/sFIFhcGDQk9EQu1mYSinMGT3BQaLnQQ==",
       "type": "package",
-      "path": "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview2-final",
+      "path": "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview3-final",
       "files": [
-        "Microsoft.EntityFrameworkCore.Tools.1.0.0-preview2-final.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.Tools.1.0.0-preview3-final.nupkg.sha512",
         "Microsoft.EntityFrameworkCore.Tools.nuspec",
-        "lib/net451/Microsoft.EntityFrameworkCore.Tools.dll",
-        "lib/net451/Microsoft.EntityFrameworkCore.Tools.xml",
-        "lib/netcore50/_._",
-        "lib/netcoreapp1.0/dotnet-ef.dll",
-        "lib/netcoreapp1.0/dotnet-ef.runtimeconfig.json",
-        "lib/netcoreapp1.0/dotnet-ef.xml",
+        "lib/net451/_._",
+        "lib/netstandard1.3/_._",
         "tools/EntityFrameworkCore.PowerShell2.psd1",
         "tools/EntityFrameworkCore.PowerShell2.psm1",
         "tools/EntityFrameworkCore.psd1",
         "tools/EntityFrameworkCore.psm1",
-        "tools/OperationHandlers.cs",
+        "tools/Microsoft.EntityFrameworkCore.Tools.dll",
         "tools/about_EntityFrameworkCore.help.txt",
         "tools/init.ps1",
-        "tools/install.ps1"
+        "tools/install.ps1",
+        "tools/net451/ef.exe",
+        "tools/net451/ef.x86.exe",
+        "tools/netcoreapp1.0/ef.dll",
+        "tools/uap10.0/ef.exe.config"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/1.0.0": {
@@ -8368,6 +8510,43 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "System.Linq.Dynamic.Core/1.0.3.4": {
+      "sha512": "NpzOVfpeQICfE/wlAG2xfHdofn5OOVlUyGaBTPjMzaa5z8+F5lKJ/LEgOP4/c0SMMvL/f6eY2eGL8EVm9ubNRA==",
+      "type": "package",
+      "path": "System.Linq.Dynamic.Core/1.0.3.4",
+      "files": [
+        "System.Linq.Dynamic.Core.1.0.3.4.nupkg.sha512",
+        "System.Linq.Dynamic.Core.nuspec",
+        "lib/dnx451/System.Linq.Dynamic.Core.dll",
+        "lib/dnx451/System.Linq.Dynamic.Core.xml",
+        "lib/net35/System.Linq.Dynamic.Core.dll",
+        "lib/net35/System.Linq.Dynamic.Core.xml",
+        "lib/net40/System.Linq.Dynamic.Core.dll",
+        "lib/net40/System.Linq.Dynamic.Core.xml",
+        "lib/net45/System.Linq.Dynamic.Core.dll",
+        "lib/net45/System.Linq.Dynamic.Core.xml",
+        "lib/net451/System.Linq.Dynamic.Core.dll",
+        "lib/net451/System.Linq.Dynamic.Core.xml",
+        "lib/net452/System.Linq.Dynamic.Core.dll",
+        "lib/net452/System.Linq.Dynamic.Core.xml",
+        "lib/net46/System.Linq.Dynamic.Core.dll",
+        "lib/net46/System.Linq.Dynamic.Core.xml",
+        "lib/net461/System.Linq.Dynamic.Core.dll",
+        "lib/net461/System.Linq.Dynamic.Core.xml",
+        "lib/netcore45/System.Linq.Dynamic.Core.dll",
+        "lib/netcore45/System.Linq.Dynamic.Core.xml",
+        "lib/netcore451/System.Linq.Dynamic.Core.dll",
+        "lib/netcore451/System.Linq.Dynamic.Core.xml",
+        "lib/netcore50/System.Linq.Dynamic.Core.dll",
+        "lib/netcore50/System.Linq.Dynamic.Core.xml",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.dll",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.xml",
+        "lib/sl50/System.Linq.Dynamic.Core.dll",
+        "lib/sl50/System.Linq.Dynamic.Core.xml",
+        "lib/uap10.0/System.Linq.Dynamic.Core.dll",
+        "lib/uap10.0/System.Linq.Dynamic.Core.xml"
       ]
     },
     "System.Linq.Expressions/4.1.0": {
@@ -11254,10 +11433,28 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "Data.Access/1.0.0": {
+      "type": "project",
+      "path": "../../Data/Data.Access/project.json",
+      "msbuildProject": "../../Data/Data.Access/Data.Access.xproj"
+    },
+    "Data.TransferObject/1.0.0": {
+      "type": "project",
+      "path": "../../Data/Data.TransferObject/project.json"
+    },
+    "Service.Messages/1.0.0": {
+      "type": "project",
+      "path": "../../Services/Service.Messages/project.json",
+      "msbuildProject": "../../Services/Service.Messages/Service.Messages.xproj"
     }
   },
   "projectFileDependencyGroups": {
     "": [
+      "Autofac >= 4.2.0",
+      "Autofac.Extensions.DependencyInjection >= 4.0.0",
+      "Data.Access >= 1.0.0-*",
+      "DynamicRepository.EFCore >= 1.1.2",
       "FontAwesome >= 4.7.0",
       "Microsoft.AspNetCore.Authentication.Cookies >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.Facebook >= 1.0.0",
@@ -11275,7 +11472,7 @@
       "Microsoft.AspNetCore.StaticFiles >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 1.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer.Design >= 1.0.1",
-      "Microsoft.EntityFrameworkCore.Tools >= 1.0.0-preview2-final",
+      "Microsoft.EntityFrameworkCore.Tools >= 1.0.0-preview3-final",
       "Microsoft.Extensions.Configuration.EnvironmentVariables >= 1.0.0",
       "Microsoft.Extensions.Configuration.Json >= 1.0.0",
       "Microsoft.Extensions.Configuration.UserSecrets >= 1.0.0",
@@ -11288,7 +11485,8 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Tools >= 1.0.0-preview2-final",
       "Microsoft.VisualStudio.Web.CodeGenerators.Mvc >= 1.0.0-preview2-final",
       "Microsoft.jQuery.Unobtrusive.Ajax >= 3.2.3",
-      "OpenSans >= 1.0.1"
+      "OpenSans >= 1.0.1",
+      "Service.Messages >= 1.0.0-*"
     ],
     ".NETCoreApp,Version=v1.0": []
   },
@@ -11343,21 +11541,13 @@
           "lib/netcoreapp1.0/dotnet-publish-iis.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview2-final": {
+      "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview3-final": {
         "type": "package",
-        "dependencies": {
-          "Microsoft.DotNet.Cli.Utils": "1.0.0-preview2-003121",
-          "Microsoft.DotNet.ProjectModel": "1.0.0-rc3-003121",
-          "Microsoft.EntityFrameworkCore.Design": "1.0.0-preview2-final",
-          "Microsoft.Extensions.CommandLineUtils": "1.0.0",
-          "Microsoft.NETCore.App": "1.0.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
-        },
         "compile": {
-          "lib/netcoreapp1.0/dotnet-ef.dll": {}
+          "lib/netstandard1.3/_._": {}
         },
         "runtime": {
-          "lib/netcoreapp1.0/dotnet-ef.dll": {}
+          "lib/netstandard1.3/_._": {}
         }
       },
       "Microsoft.Extensions.SecretManager.Tools/1.0.0-preview2-final": {
@@ -11398,7 +11588,7 @@
       "BundlerMinifier.Core >= 2.0.238",
       "Microsoft.AspNetCore.Razor.Tools >= 1.0.0-preview2-final",
       "Microsoft.AspNetCore.Server.IISIntegration.Tools >= 1.0.0-preview2-final",
-      "Microsoft.EntityFrameworkCore.Tools >= 1.0.0-preview2-final",
+      "Microsoft.EntityFrameworkCore.Tools >= 1.0.0-preview3-final",
       "Microsoft.Extensions.SecretManager.Tools >= 1.0.0-preview2-final",
       "Microsoft.VisualStudio.Web.CodeGeneration.Tools >= 1.0.0-preview2-final"
     ]
