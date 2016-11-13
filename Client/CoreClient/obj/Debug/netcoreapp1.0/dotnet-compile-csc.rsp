@@ -240,6 +240,8 @@
 "D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Controllers\HomeController.cs"
 "D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Controllers\ManageController.cs"
 "D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Extensions\AjaxExtensions.cs"
+"D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Models\SinglePageBannerPartialViewModels.cs"
+"D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Models\SinglePlaceViewModel.cs"
 "D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs"
 "D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Models\AccountViewModels\ForgotPasswordViewModel.cs"
 "D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Models\AccountViewModels\LoginViewModel.cs"
