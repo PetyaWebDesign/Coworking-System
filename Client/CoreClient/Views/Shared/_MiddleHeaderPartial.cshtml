@@ -8,15 +8,14 @@
         <div class="top-nav">
             <ul class="right-icons">
                 <li><a href="#"><i class="fa fa-map-marker"> </i>Добави място</a></li>
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#modalLogin" ><i class="fa fa-user"> </i>Вход</a>
-                </li>
+
+                @await Html.PartialAsync("_LoginPartial")
                 <li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
 
             </ul>
-           
+
             <div class="nav-icon">
-              
+
                 <div class="hero nav_slide_button" id="hero">
                     <a href="#"><i class="glyphicon glyphicon-menu-hamburger"></i> </a>
                     </div>
