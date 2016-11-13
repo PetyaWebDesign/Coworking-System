@@ -46,8 +46,14 @@ namespace CoreClient
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+            services.AddIdentity<ApplicationUser, IdentityRole>(x =>
+        {
+            x.Password.RequiredLength = 6;
+            x.Password.RequireUppercase = false;
+            x.Password.RequireLowercase = false;
+            x.Password.RequireNonAlphanumeric = false;
+        })
+        .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
             services.AddMvc();
