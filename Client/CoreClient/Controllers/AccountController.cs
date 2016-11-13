@@ -12,6 +12,8 @@ using CoreClient.Models;
 using CoreClient.Models.AccountViewModels;
 using CoreClient.Services;
 using CoreClient.Extensions;
+using Services.Messages;
+using Data.TransferObject;
 
 namespace CoreClient.Controllers
 {

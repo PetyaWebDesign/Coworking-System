@@ -1,6 +1,7 @@
-﻿<div class=" banner-buying">
-    <div class=" container">
-        <h3><span>Lor</span>em</h3>
+﻿@model CoreClient.Models.SinglePageBannerPartialViewModels
+<div class="banner-buying" style="background: url(@Model.PictureUrl) no-repeat;">
+    <div class="container">
+        <h3>@Model.PageName</h3>
         <!---->
         <div class="menu-right">
             <ul class="menu">
@@ -21,23 +22,23 @@
         <div class="clearfix"> </div>
         <!--initiate accordion-->
         <script type="text/javascript">
-			$(function() {
-			    var menu_ul = $('.menu > li > ul'),
-			           menu_a  = $('.menu > li > a');
-			    menu_ul.hide();
-			    menu_a.click(function(e) {
-			        e.preventDefault();
-			        if(!$(this).hasClass('active')) {
-			            menu_a.removeClass('active');
-			            menu_ul.filter(':visible').slideUp('normal');
-			            $(this).addClass('active').next().stop(true,true).slideDown('normal');
-			        } else {
-			            $(this).removeClass('active');
-			            $(this).next().stop(true,true).slideUp('normal');
-			        }
-			    });
+            $(function () {
+                var menu_ul = $('.menu > li > ul'),
+			           menu_a = $('.menu > li > a');
+                menu_ul.hide();
+                menu_a.click(function (e) {
+                    e.preventDefault();
+                    if (!$(this).hasClass('active')) {
+                        menu_a.removeClass('active');
+                        menu_ul.filter(':visible').slideUp('normal');
+                        $(this).addClass('active').next().stop(true, true).slideDown('normal');
+                    } else {
+                        $(this).removeClass('active');
+                        $(this).next().stop(true, true).slideUp('normal');
+                    }
+                });
 
-			});
+            });
         </script>
 
     </div>
