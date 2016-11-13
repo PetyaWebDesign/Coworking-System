@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "41cbd53cec97e3272d4d22a3b937c8a4232a94c7"
+    "signature": "8fa29d85d02a242e5d6ec4868b93cb6f5ba2f532"
   },
   "compilationOptions": {
     "defines": [
@@ -17,6 +17,8 @@
       "CoreClient/1.0.0": {
         "dependencies": {
           "Microsoft.NETCore.App": "1.0.1",
+          "Autofac": "4.2.0",
+          "Autofac.Extensions.DependencyInjection": "4.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.0.0",
@@ -41,7 +43,9 @@
           "Microsoft.AspNetCore.Authentication.Twitter": "1.0.0",
           "Microsoft.AspNetCore.Authentication.MicrosoftAccount": "1.0.0",
           "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.3",
-          "FontAwesome": "4.7.0"
+          "FontAwesome": "4.7.0",
+          "DynamicRepository.EFCore": "1.1.2",
+          "Data.Access": "1.0.0"
         },
         "runtime": {
           "CoreClient.dll": {}
@@ -50,8 +54,76 @@
           "CoreClient.dll": {}
         }
       },
+      "Autofac/4.2.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.ComponentModel": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/4.0.0": {
+        "dependencies": {
+          "Autofac": "4.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
+          "NETStandard.Library": "1.6.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "DynamicRepository/1.1.2": {
+        "dependencies": {
+          "LinqKit": "1.1.7.3",
+          "Microsoft.NETCore.App": "1.0.1",
+          "System.Linq.Dynamic.Core": "1.0.3.4"
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/DynamicRepository.dll": {}
+        },
+        "compile": {
+          "lib/netcoreapp1.0/DynamicRepository.dll": {}
+        }
+      },
+      "DynamicRepository.EFCore/1.1.2": {
+        "dependencies": {
+          "DynamicRepository": "1.1.2",
+          "Microsoft.EntityFrameworkCore": "1.0.1",
+          "System.Linq.Dynamic.Core": "1.0.3.4"
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/DynamicRepository.EFCore.dll": {}
+        },
+        "compile": {
+          "lib/netcoreapp1.0/DynamicRepository.EFCore.dll": {}
+        }
+      },
       "FontAwesome/4.7.0": {},
       "jQuery/1.8.0": {},
+      "LinqKit/1.1.7.3": {
+        "dependencies": {
+          "System.Linq.Expressions": "4.1.0",
+          "System.Linq.Queryable": "4.0.1",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Threading.Tasks": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/LinqKit.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/LinqKit.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/1.0.1": {
         "dependencies": {
           "Microsoft.AspNetCore.DataProtection": "1.0.0",
@@ -2127,6 +2199,26 @@
           }
         }
       },
+      "System.Linq.Dynamic.Core/1.0.3.4": {
+        "dependencies": {
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Dynamic.Runtime": "4.0.11",
+          "System.Globalization": "4.0.11",
+          "System.Linq.Expressions": "4.1.0",
+          "System.Linq.Queryable": "4.0.1",
+          "System.Reflection.Emit": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Threading": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Linq.Dynamic.Core.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/System.Linq.Dynamic.Core.dll": {}
+        }
+      },
       "System.Net.WebSockets/4.0.0": {
         "dependencies": {
           "Microsoft.Win32.Primitives": "4.0.1",
@@ -2168,6 +2260,33 @@
         },
         "compile": {
           "lib/netstandard1.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "Data.Access/1.0.0": {
+        "dependencies": {
+          "Data.TransferObject": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "1.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.0.1",
+          "NETStandard.Library": "1.6.0"
+        },
+        "runtime": {
+          "Data.Access.dll": {}
+        },
+        "compile": {
+          "Data.Access.dll": {}
+        }
+      },
+      "Data.TransferObject/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0",
+          "NETStandard.Library": "1.6.0"
+        },
+        "runtime": {
+          "Data.TransferObject.dll": {}
+        },
+        "compile": {
+          "Data.TransferObject.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -3175,6 +3294,9 @@
           "System.Reflection.Primitives": "4.0.1",
           "System.Runtime": "4.1.0"
         },
+        "compile": {
+          "ref/netstandard1.1/System.Reflection.Emit.dll": {}
+        },
         "compileOnly": true
       },
       "System.Reflection.Emit.ILGeneration/4.0.1": {
@@ -3182,6 +3304,9 @@
           "System.Reflection": "4.1.0",
           "System.Reflection.Primitives": "4.0.1",
           "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/System.Reflection.Emit.ILGeneration.dll": {}
         },
         "compileOnly": true
       },
@@ -3801,6 +3926,26 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Autofac/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WHiPMqI8FYa4Mf4yTb0P/aBibHn7Z0B9r02CEXy9oAAkQMJpHxLOE45iIMMW+xthXu26V9nRIz7o5lA7V3ztgw=="
+    },
+    "Autofac.Extensions.DependencyInjection/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UQP+CkHs6wfjWhisuhSFoG8CNrG8fmYOclFwx/aYNc+He1Qoi8s9UDTSzcPncJ2JOtmZmFRWSLT0jhtT6KmYJg=="
+    },
+    "DynamicRepository/1.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uFJwL9jhBEzdh5qG+FI1cJRckSnVzOQZlCW7+E2PwJJvbtl13eJ1Vjk64687BQ0ydAJbm9Vk8SR5UIlHs/KYug=="
+    },
+    "DynamicRepository.EFCore/1.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I3IPiGY6KEBKChgkQ0ncBSqsorm2Tatn5rB7XR2eKmnEwM4AfohrjOGez3RzU/A22youXcjPObBsSJIdmL4J2A=="
+    },
     "FontAwesome/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -3810,6 +3955,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-laDFQRJrIRHT0Z0GVYklMt3bE0iu0MZFJwHwg21kt3SHb7Bj8TdNiM3K+ZdK1DzB8ZxKy8z7NkJvwMas+dmHBw=="
+    },
+    "LinqKit/1.1.7.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CuBnUDQccS0ZeArvr+RIqQVF1NhyvEwYZSUOU9oJty+tZNdRhBvhJiqT9PgPXYfJ0wobFmFUdfEoCIX6WRSfqA=="
     },
     "Microsoft.AspNetCore.Antiforgery/1.0.1": {
       "type": "package",
@@ -4486,6 +4636,11 @@
       "serviceable": true,
       "sha512": "sha512-L9QVhk8hIEix5KNA0kW58Ha+Y1dNGqqqIhAaJkhcGCWeQzUmN0njzI7SG/XAazpMecboOdFFlH3pH/qbwXLJAg=="
     },
+    "System.Linq.Dynamic.Core/1.0.3.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NpzOVfpeQICfE/wlAG2xfHdofn5OOVlUyGaBTPjMzaa5z8+F5lKJ/LEgOP4/c0SMMvL/f6eY2eGL8EVm9ubNRA=="
+    },
     "System.Net.WebSockets/4.0.0": {
       "type": "package",
       "serviceable": true,
@@ -4500,6 +4655,16 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-TWZnuiJgPDAEEUfobD7njXvSVR2Toz+jvKWds6yL4oSztmKQfnWzucczjzA+6Dv1bktBdY71sZW1YN0X6m9chQ=="
+    },
+    "Data.Access/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Data.TransferObject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Libuv/1.9.0": {
       "type": "package",

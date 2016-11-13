@@ -13,6 +13,11 @@
 --version:1.0.0.0
 --informational-version:1.0.0
 --target-framework:.NETCoreApp,Version=v1.0
+--reference:C:\Users\HP\.nuget\packages\Autofac\4.2.0\lib\netstandard1.1\Autofac.dll
+--reference:C:\Users\HP\.nuget\packages\Autofac.Extensions.DependencyInjection\4.0.0\lib\netstandard1.1\Autofac.Extensions.DependencyInjection.dll
+--reference:C:\Users\HP\.nuget\packages\DynamicRepository\1.1.2\lib\netcoreapp1.0\DynamicRepository.dll
+--reference:C:\Users\HP\.nuget\packages\DynamicRepository.EFCore\1.1.2\lib\netcoreapp1.0\DynamicRepository.EFCore.dll
+--reference:C:\Users\HP\.nuget\packages\LinqKit\1.1.7.3\lib\netstandard1.3\LinqKit.dll
 --reference:C:\Users\HP\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.1\lib\netstandard1.3\Microsoft.AspNetCore.Antiforgery.dll
 --reference:C:\Users\HP\.nuget\packages\Microsoft.AspNetCore.Authentication\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Authentication.dll
 --reference:C:\Users\HP\.nuget\packages\Microsoft.AspNetCore.Authentication.Cookies\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Authentication.Cookies.dll
@@ -178,6 +183,7 @@
 --reference:C:\Users\HP\.nuget\packages\System.IO.MemoryMappedFiles\4.0.0\ref\netstandard1.3\System.IO.MemoryMappedFiles.dll
 --reference:C:\Users\HP\.nuget\packages\System.IO.UnmanagedMemoryStream\4.0.1\ref\netstandard1.3\System.IO.UnmanagedMemoryStream.dll
 --reference:C:\Users\HP\.nuget\packages\System.Linq\4.1.0\ref\netstandard1.6\System.Linq.dll
+--reference:C:\Users\HP\.nuget\packages\System.Linq.Dynamic.Core\1.0.3.4\lib\netstandard1.3\System.Linq.Dynamic.Core.dll
 --reference:C:\Users\HP\.nuget\packages\System.Linq.Expressions\4.1.0\ref\netstandard1.6\System.Linq.Expressions.dll
 --reference:C:\Users\HP\.nuget\packages\System.Linq.Parallel\4.0.1\ref\netstandard1.1\System.Linq.Parallel.dll
 --reference:C:\Users\HP\.nuget\packages\System.Linq.Queryable\4.0.1\ref\netstandard1.0\System.Linq.Queryable.dll
@@ -193,6 +199,8 @@
 --reference:C:\Users\HP\.nuget\packages\System.ObjectModel\4.0.12\ref\netstandard1.3\System.ObjectModel.dll
 --reference:C:\Users\HP\.nuget\packages\System.Reflection\4.1.0\ref\netstandard1.5\System.Reflection.dll
 --reference:C:\Users\HP\.nuget\packages\System.Reflection.DispatchProxy\4.0.1\ref\netstandard1.3\System.Reflection.DispatchProxy.dll
+--reference:C:\Users\HP\.nuget\packages\System.Reflection.Emit\4.0.1\ref\netstandard1.1\System.Reflection.Emit.dll
+--reference:C:\Users\HP\.nuget\packages\System.Reflection.Emit.ILGeneration\4.0.1\ref\netstandard1.0\System.Reflection.Emit.ILGeneration.dll
 --reference:C:\Users\HP\.nuget\packages\System.Reflection.Extensions\4.0.1\ref\netstandard1.0\System.Reflection.Extensions.dll
 --reference:C:\Users\HP\.nuget\packages\System.Reflection.Metadata\1.3.0\lib\netstandard1.1\System.Reflection.Metadata.dll
 --reference:C:\Users\HP\.nuget\packages\System.Reflection.Primitives\4.0.1\ref\netstandard1.0\System.Reflection.Primitives.dll
@@ -228,6 +236,8 @@
 --reference:C:\Users\HP\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\HP\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\HP\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
+--reference:D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Data\Data.Access\bin\Debug\netstandard1.6\Data.Access.dll
+--reference:D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Data\Data.TransferObject\bin\Debug\netstandard1.6\Data.TransferObject.dll
 --resource:"D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\obj\Debug\netcoreapp1.0\CoreClientdotnet-compile.deps.json",CoreClient.deps.json
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Program.cs
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Startup.cs
@@ -235,10 +245,6 @@ D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Contr
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Controllers\BaseController.cs
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Controllers\HomeController.cs
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Controllers\ManageController.cs
-D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Data\ApplicationDbContext.cs
-D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Data\Migrations\00000000000000_CreateIdentitySchema.cs
-D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
-D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Data\Migrations\ApplicationDbContextModelSnapshot.cs
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Extensions\AjaxExtensions.cs
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Models\ApplicationUser.cs
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs
@@ -257,6 +263,7 @@ D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Model
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Models\ManageViewModels\RemoveLoginViewModel.cs
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Models\ManageViewModels\SetPasswordViewModel.cs
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Models\ManageViewModels\VerifyPhoneNumberViewModel.cs
+D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Services\AutofacConf.cs
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Services\IEmailSender.cs
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Services\ISmsSender.cs
 D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Client\CoreClient\Services\MessageServices.cs

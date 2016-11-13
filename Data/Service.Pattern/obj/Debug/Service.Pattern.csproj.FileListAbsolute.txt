@@ -1,7 +1,0 @@
-D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Data\Service.Pattern\bin\Debug\Service.Pattern.dll
-D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Data\Service.Pattern\bin\Debug\Service.Pattern.pdb
-D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Data\Service.Pattern\obj\Debug\Service.Pattern.csprojResolveAssemblyReference.cache
-D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Data\Service.Pattern\obj\Debug\Service.Pattern.dll
-D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Data\Service.Pattern\obj\Debug\Service.Pattern.pdb
-D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Data\Service.Pattern\bin\Debug\Repository.Pattern.dll
-D:\onedrive\Work Things\asp.net projects\CoworkingSystem\Data\Service.Pattern\bin\Debug\Repository.Pattern.pdb
