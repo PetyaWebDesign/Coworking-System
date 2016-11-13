@@ -485,13 +485,12 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 .most-1 h5{
    	font-size: 1.2em;
-  	color: #27DA93;
+  	color: orangered;
   	padding: 0em 0 0.3em;
-    font-family: 'Montserrat-Regular';
 }
 .most-1 h5 a{
    	text-decoration:none;
-  	color: #27DA93;
+  	color:orangered;
 }
 .most-1 h5 a:hover{
   	color: #000;
@@ -501,7 +500,7 @@ ul.callbacks_tabs.callbacks1_tabs {
    color: #000;
 }
 span.four {
-  background-color: #27DA93;
+  background-color:black;
   font-size: 1em;
   color: #FFF;
   display: block;
@@ -567,8 +566,7 @@ a.mask {
 .ser-top h4{
 	font-size: 1.4em;
 	text-transform: uppercase;
-	font-family: 'Montserrat-Regular';
-	color:#27da93 ;
+	color:orange;
 }
 .ser-top p{
 	color:#a3a3a3;
@@ -593,7 +591,7 @@ a.mask {
 	position: relative;
 	z-index: 1;
 	color:#8e8e8e;
-  	border:3px solid #27da93;
+  	border:3px solid orange;
   	line-height: 4.5em;
   	font-size: 1em;
 }
@@ -799,14 +797,14 @@ a.more:hover{
 /*--//project--*/
 /*--middle--*/
 .content-middle {
-  background: url(../images/betahaus.jpg) no-repeat center;
+  background: url(../images/home-banner.jpg) no-repeat center;
   width: 100%;
   min-height: 250px;
   display: block;
   background-size: cover; 
 }
 .mid-content{
-	background:#27da93;
+	background:orange;
 	padding:2em;
 	width:35%;
 	margin:5em auto 0;
@@ -815,7 +813,6 @@ a.more:hover{
 .mid-content h3{
 	text-transform:uppercase;
 	font-size:2.7em;
-	font-family: 'Montserrat-Regular';
 	color:#fff;	
 }
 .mid-content p{
@@ -1003,7 +1000,7 @@ ul.nav-bottom li  a{
 	margin: 0.5em 0;
 }
 ul.nav-bottom li  a:hover{
-	color:#27da93;
+	color:orange;
 }
 .amet-sed p{
 	color:#989696;
@@ -4988,7 +4985,7 @@ a.more {
 }
 
 .user-profile{
-    background-color:#DCDCDC;
+    background-color:orange;
 }
 
 .user-profile img{
