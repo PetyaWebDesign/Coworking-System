@@ -9,6 +9,8 @@ using Microsoft.Extensions.Logging;
 using CoreClient.Models;
 using CoreClient.Models.ManageViewModels;
 using CoreClient.Services;
+using Services.Messages;
+using Data.TransferObject;
 
 namespace CoreClient.Controllers
 {

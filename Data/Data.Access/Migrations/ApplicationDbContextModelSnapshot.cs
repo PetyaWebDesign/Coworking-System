@@ -125,7 +125,7 @@ namespace Data.Access
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("CoreClient.Models.ApplicationUser", b =>
+            modelBuilder.Entity("Data.TransferObject.ApplicationUser", b =>
                 {
                     b.Property<string>("Id");
 
@@ -184,7 +184,7 @@ namespace Data.Access
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("CoreClient.Models.ApplicationUser")
+                    b.HasOne("Data.TransferObject.ApplicationUser")
                         .WithMany("Claims")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -192,7 +192,7 @@ namespace Data.Access
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("CoreClient.Models.ApplicationUser")
+                    b.HasOne("Data.TransferObject.ApplicationUser")
                         .WithMany("Logins")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -205,7 +205,7 @@ namespace Data.Access
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("CoreClient.Models.ApplicationUser")
+                    b.HasOne("Data.TransferObject.ApplicationUser")
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);

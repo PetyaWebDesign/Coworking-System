@@ -14,6 +14,7 @@ using CoreClient.Services;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Data.Access;
+using Data.TransferObject;
 
 namespace CoreClient
 {

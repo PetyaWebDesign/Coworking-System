@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CoreClient.Services
+namespace Services.Messages
 {
     public interface ISmsSender
     {

@@ -45,7 +45,8 @@
           "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.3",
           "FontAwesome": "4.7.0",
           "DynamicRepository.EFCore": "1.1.2",
-          "Data.Access": "1.0.0"
+          "Data.Access": "1.0.0",
+          "Service.Messages": "1.0.0"
         },
         "compile": {
           "CoreClient.dll": {}
@@ -2964,6 +2965,14 @@
         "compile": {
           "Data.TransferObject.dll": {}
         }
+      },
+      "Service.Messages/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "Service.Messages.dll": {}
+        }
       }
     },
     ".NETCoreApp,Version=v1.0/": {
@@ -2998,7 +3007,8 @@
           "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.3",
           "FontAwesome": "4.7.0",
           "DynamicRepository.EFCore": "1.1.2",
-          "Data.Access": "1.0.0"
+          "Data.Access": "1.0.0",
+          "Service.Messages": "1.0.0"
         },
         "runtime": {
           "CoreClient.dll": {}
@@ -5818,6 +5828,14 @@
         "runtime": {
           "Data.TransferObject.dll": {}
         }
+      },
+      "Service.Messages/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "runtime": {
+          "Service.Messages.dll": {}
+        }
       }
     }
   },
@@ -6943,6 +6961,11 @@
       "sha512": ""
     },
     "Data.TransferObject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service.Messages/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
