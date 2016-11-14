@@ -759,9 +759,9 @@ p.cost {
 a.more{
 	text-decoration: none;
 	font-size: 0.9em;
-	border: 1px solid #27da93;
-	color:#27da93;
-	padding: 0.3em 0.7em;
+	border: 1px solid blue;
+	color:blue;
+	padding: 0.8em 1.9em;
 	display:inline-block;
 	margin: 1em 0 0;
 }
@@ -871,10 +871,10 @@ a.more-in{
   transform: scaleX(1);
 }
 a.more-in:before{
-	background:#fff;
+	background:blue;
 }
 a.more-in:hover{
-	color: #27da93;
+	color: #fff;
 }
 /*--//middle--*/
 /*--content-bottom--*/
@@ -1686,7 +1686,7 @@ option.rm{
   padding: 1em 2em;
 }
 a.builder{
-	background: #27da93;
+	background: orange;
 	font-size: 0.9em;
 	padding: 0.4em 0.8em;
 	text-decoration: none;
@@ -4949,5 +4949,15 @@ a.more {
     color:#fff;
     font-size:1.4em;
     text-align:center;
+}
+
+/*submit button LOG-OFF*/
+.submit-button {
+    background: transparent;
+    border:0;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    cursor:pointer;
 }
 
