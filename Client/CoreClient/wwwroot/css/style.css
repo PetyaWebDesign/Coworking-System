@@ -1633,44 +1633,44 @@ option.rm{
 	margin: 0 0 0.5em;
 }
 .middle-side p{
-	font-size:0.9em;
+	 font-size:1.1em;
 	color:#a3a3a3;
 	line-height:1.8em;
 	padding: 0.4em 0;
 }
 .middle-side p span.bath{
-	color:#000;
+	color:#229cdb;
 	margin: 0 31% 0 0;
 	font-weight: bold;
 }
 .middle-side p span.bath1{
-	color:#000;
+	color:#229cdb;
 	margin: 0 50% 0 0;
 	font-weight: bold;
 }
 .middle-side p span.bath2{
-	color:#000;
+	color:#229cdb;
 	margin: 0 35% 0 0;
 	font-weight: bold;
 }
 .middle-side p span.bath3{
-	color:#000;
+	color:#229cdb;
 	margin: 0 38% 0 0;
 	font-weight: bold;
 }
 .middle-side p span.bath4{
-	color:#000;
+	color:#229cdb;
 	margin: 0 41% 0 0;
 	font-weight: bold;
 }
 .middle-side p span.bath5{
-	color:#000;
+	color:#229cdb;
 	margin: 0 45% 0 0;
 	font-weight: bold;
 }
 
 .middle-side p span.bath6{
-	color:#000;
+	color:#229cdb;
 	margin: 0 31% 0 0;
 	font-weight: bold;
 }
@@ -1730,6 +1730,7 @@ a.in-box{
   	color: #000;
   	display: block;
 }
+
 a.in-box:hover {
   	color: #27da93;
 }
@@ -1750,8 +1751,7 @@ a.in-box:hover {
 /*--//single--*/
 /*--buy-single--*/
 .map-buy-single1 {
-  border: 1px solid #D5D5D5;
-  padding: 1em;
+ 
 }
 .map-buy-single1 iframe{
 	border: none;
@@ -1761,7 +1761,7 @@ a.in-box:hover {
 
 .map-buy-single h4 {
   font-size: 1.5em;
-  color: #000;
+  color: orange;
   padding: 1em 0;
 }
 .buy-sin h4{
@@ -1791,12 +1791,12 @@ a.in-box:hover {
 }
 .video-pre h4 {
   font-size: 1.5em;
-  color: #000;
+  color: orange;
   padding: 1em 0;
 }
 .video-pre iframe{
 	width:100%;
-	min-height: 400px;
+	min-height: 450px;
 	border: none;
 }
 /*--//buy-single--*/
@@ -4961,3 +4961,9 @@ a.more {
     cursor:pointer;
 }
 
+/*SinglePlace Info*/
+.place-information{
+    color:#989898;
+    display:inline-block;
+    float:right;
+}
